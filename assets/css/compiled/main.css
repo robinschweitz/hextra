@@ -2242,8 +2242,12 @@ article details > summary::before {
   grid-template-columns: repeat(auto-fill, minmax(max(250px, calc((100% - 1rem * 2) / var(--hextra-cards-grid-cols))), 1fr));
 }
 .hextra-card {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column; /* Use 'row' for side-by-side layout */
+  height: 100%;
 }
+
 .hextra-card img {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3545,3 +3549,8 @@ body:is(html[class~="dark"] *) {
     background-color: transparent;
   }
 }
+
+.hextra-card-image {
+    margin: 15px;
+  }
+  
