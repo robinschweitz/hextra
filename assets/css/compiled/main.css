@@ -2248,6 +2248,11 @@ article details > summary::before {
   height: 100%;
 }
 
+.rainbow-text {
+  background-image: linear-gradient(to left, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
+
 .hextra-card img {
   -webkit-user-select: none;
      -moz-user-select: none;
